@@ -3,19 +3,25 @@ def isIncreasing(list):
     first = list[0]
     for i in list:
         if first < i:
-            i = first
-            return True
-        else:
-            return False
+            i
+    #     else:
+    #         return False
+    # return True
             
    
  
         
         
-# def numconvert(num):
-#     result = ""
-#     for i in int(num):
-#         result = result + i
+def numconvert(num):
+    result = ""
+    
+    for i in num:
+        x = str(i)
+        y = "".join(x)
+        result = result + y
+        answer = int(result)
+    return result
+   
 
 
 def bitconvert(binary):
@@ -33,9 +39,9 @@ def bitconvert(binary):
 
 
 def test():
-    increasing_nums = [1,2,1]
+    increasing_nums = [1,2,3]
     print(isIncreasing(increasing_nums))
-    # print(numconvert([3,5,1]))
+    print(numconvert([3,5,1]))
     print(bitconvert(10))
 
 if __name__ == "__main__":
