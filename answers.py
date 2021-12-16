@@ -36,14 +36,14 @@ def binconvert(binary):
 
 def test():
     increasing_nums = [1,2,3]
-    print("Question 1")
+    print("Question 1: Print True for increasing value, print False if it decreases")
     print("Example of Increascing Values [1,2,3,4]:", isIncreasing([1,2,3,4]))
     print("Example that will return False [1,2,1,4]:", isIncreasing([1,2,1,4]))
     print("")
-    print("Question 2")
+    print("Question 2: changes a list of numbers into integers")
     print("[3,5,1] turns into:", numconvert([3,5,1]))
     print("")
-    print("Question 3")
+    print("Question 3: converts binary to decimals")
     print("binary 10 turns into decimal", binconvert(10))
 
 if __name__ == "__main__":
