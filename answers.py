@@ -1,16 +1,12 @@
 def isIncreasing(list):
-    count = 0
     first = list[0]
-    for i in list:
-        if first < i:
-            i
-    #     else:
-    #         return False
-    # return True
-            
-   
- 
+    for i in range(len(list)-2):
+        if list[i] < list[i+1] < list[i+2]<list[i+3]:
+            return True
+        else:
+            return False
         
+            
         
 def numconvert(num):
     result = ""
@@ -24,7 +20,7 @@ def numconvert(num):
    
 
 
-def bitconvert(binary):
+def binconvert(binary):
     result = 0
     value = 1
     bin = str(binary)
@@ -40,9 +36,15 @@ def bitconvert(binary):
 
 def test():
     increasing_nums = [1,2,3]
-    print(isIncreasing(increasing_nums))
-    print(numconvert([3,5,1]))
-    print(bitconvert(10))
+    print("Question 1")
+    print("Example of Increascing Values [1,2,3,4]:", isIncreasing([1,2,3,4]))
+    print("Example that will return False [1,2,1,4]:", isIncreasing([1,2,1,4]))
+    print("")
+    print("Question 2")
+    print("[3,5,1] turns into:", numconvert([3,5,1]))
+    print("")
+    print("Question 3")
+    print("binary 10 turns into decimal", binconvert(10))
 
 if __name__ == "__main__":
     test()
