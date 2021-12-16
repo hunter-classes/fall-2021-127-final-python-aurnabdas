@@ -8,13 +8,13 @@ def isIncreasing(list):
         
             
         
+
 def numconvert(num):
     result = ""
     
     for i in num:
-        x = str(i)
-        y = "".join(x)
-        result = result + y
+        numbers = str(i)
+        result = result + numbers
         answer = int(result)
     return result
    
